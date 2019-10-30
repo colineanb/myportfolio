@@ -1,0 +1,310 @@
+*::-webkit-scrollbar { 
+    width: 0 !important 
+}
+
+/**********
+    nav
+**********/
+
+a, ul{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 9999;
+}
+
+header nav ul {
+    width:15%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    position: absolute;
+    width:90%;
+    margin-top:2%;
+    margin-left:5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+    font-weight: 300;
+    color:white;
+}
+
+a, ul{
+    text-decoration: none;
+}
+
+header nav ul {
+    width:15%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*********
+    header
+*********/
+header{
+    width:100vw;
+    height: 70vh;
+}
+
+header img{
+    width:100vw;
+    height: 70vh;
+}
+
+.title{
+    position: absolute;
+    width:30vw;
+    height: 75vh;
+    left:10%;
+    display:flex;
+    align-items: center;
+}
+
+header h1{
+    font-family: 'Tiempos Headline';
+    font-weight: bold;
+    font-size: 50px;
+    color:white;
+}
+
+.description-container{
+    width:100vw;
+    height: 35vh;
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background:#111111;
+}
+
+.content-container{
+    width:80vw;
+    display:flex;
+    align-items: flex-end;
+}
+
+.description-container .content-container h3{
+    font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+    font-weight: 500;
+    color:#6C6C6C;
+    width:30vw;
+    height: 10vh;
+    font-size:18px;
+    display:flex;
+    align-items: center;
+}
+
+.text{
+    width:80vw;
+    display:flex;
+    align-items: flex-end;
+}
+
+.text p {
+    width:30vw;
+    height: 10vh;
+    color:white;
+    font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+    display:flex;
+    align-items: center;
+}
+
+/***************
+    projects
+****************/
+
+.project{
+    width:100vw;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project .project-title{
+    width:80vw;
+    height: 30vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project .project-title h2{
+    font-family: 'Tiempos Headline';
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom:4%;
+}
+
+.project .project-title p{
+    font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.project .project-background{
+    width:80vw;
+    background:#EDEFF5;
+    display:flex;
+    justify-content: center;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+.project .project-background img{
+    width:85%;
+    height: 85%;
+}
+
+.project .project-background .portrait{
+    width:55%;
+    height: 55%;
+}
+
+.project .project-background .mandala{
+    width:50%;
+    height: 50%;
+}
+
+.project .poster-background{
+   background:white;
+}
+
+
+/** different background **/
+
+.project .mandala-bg{ 
+    background:#F0E5E9;
+ }
+ 
+.project .error-page{ 
+    background:#EFD5D0;
+ }
+ 
+.project .school{ 
+    background:#B28484;
+ }
+ 
+.project .babymeia{ 
+    background:#7F6A9F;
+ }
+ 
+
+/***************
+    footer
+****************/
+
+footer{
+    width:100vw;
+    height: 35vh;
+    padding-top:5%;
+    display:flex;
+    flex-direction: row;
+}
+
+footer .background{
+    width:40vw;
+    height: 35vh;
+    background:#111111;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer .background .background-text{
+    width:28vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left:25%;
+}
+
+
+footer .background p, h3{
+    color:#6C6C6C;
+    font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+    font-weight: 500;
+    padding-top:4%;
+    padding-bottom:4%;
+}
+
+footer .background h3{
+    color:white;
+    font-family: 'Tiempos Headline';
+    font-size: 35px;
+    font-weight: 500;
+}
+
+footer .discover-container{
+    width:20vw;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .discover-container .circle{
+    width:4vw;
+    height: 7vh;
+    border-radius: 50%;
+    background:rgba(245, 245, 245, 0.123);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+}
+
+footer .discover-container .circle:hover{
+    animation: button 1s ease-in-out infinite;
+}
+
+@keyframes button{
+    50%{transform:scale(1.1)};
+    100%{transform:scale(0)};
+}
+
+footer .background-text .discover{
+    width:7vw;
+    color:white;
+    font-weight: 100;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .background-text .discover::before{
+    height:5vh;
+    width:0.1vw;
+    background: white;
+    content:"";
+    transform: rotate(-90deg) translateY(-50%);
+    margin-right:8%;
+}
+
+footer .img-container{
+    width:60vw;
+    height: 35vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+        ),url(../images/footer3.png);
+}
+
+footer .img-container img{
+    width:60vw;
+    height: 35vh;
+}
+
+footer .img-container .opacity{
+    width:60vw;
+    height: 35vh;
+    background:black;
+    opacity: 0.1;
+}

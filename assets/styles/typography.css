@@ -1,0 +1,67 @@
+*::-webkit-scrollbar { 
+    width: 0 !important 
+}
+
+/**********
+    header
+**********/
+
+header img{
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+}
+.opacity-header{
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    top:0;
+    z-index: 999;
+    background:black;
+    opacity: 0.3;
+}
+
+.title{
+    z-index: 9999;
+}
+
+.project .compo2{
+    background:rgb(36, 36, 36);
+}
+
+.project .compo1{
+    background:rgb(36, 36, 36);
+}
+
+.second-title{
+    padding-top:5%;
+}
+
+.first-project{
+    padding-top:15%;
+}
+
+.first-bg{
+    margin-top: 10%;
+}
+
+.project .project-title h2{
+    padding-bottom: 0%;
+}
+
+h2:first-child{
+    margin-bottom: 4%;
+}
+
+span{
+    font-weight: 500;
+}
+
+footer .img-container{
+    width:60vw;
+    height: 35vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+        ),url(../images/footer2.png);
+}
