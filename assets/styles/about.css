@@ -1,5 +1,5 @@
 *{
-  background:#F6F3ED;
+  background:#1A213F;
   color:#363636;
 }
 /**********
@@ -25,6 +25,7 @@ header nav{
 a, ul{
   text-decoration: none;
   font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+  color:#FBF7F2;
 
 }
 
@@ -38,57 +39,146 @@ header nav ul {
 /**********
     main
 **********/
-.main-container{
+main{
   width:80vw;
   margin-left:10vw;
-  margin-top:10%;
+  margin-top:4%;
   display:flex;
+  /* border:1px solid yellow; */
+  flex-direction: column;
 }
 
+.main-container{
+  /* border:6px solid pink; */
+  display:flex;
+  align-items: center;
+
+}
 /**************
     left side
 ****************/
 
-.main-container .left-content{
-  width:40vw;
-}
-.idkyet{
-  width:35vw;
-  height: 65vh;
+.left-side{
+  width:50%;
+  height:100%;
+  /* border:5px solid white; */
+  display:flex;
+  justify-content: flex-start;
 }
 
-.idkyet img{
-  width:100%;
-  height:100%;
+.hello p{
+  font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+  font-weight: 450;
+  color:rgba(255, 255, 255, 0.329);
+  font-size:25px;
+  position: absolute;
 }
+
+.first-bloc{
+width:70%;
+ display:flex;
+ margin-top:10%;
+ /* border:3px solid greenyellow; */
+ z-index: 9999;
+}
+.first-bloc img{
+  width:100%;
+}
+
+.second-bloc{
+  position: absolute;
+  margin-left:20%;
+  width:30%;
+  /* border:3px solid red; */
+  display:flex;
+  justify-content: flex-end;
+}
+
+.second-bloc img{
+  width:100%;
+}
+
+
+
 
 /**************
     right side
 ****************/
-.main-container .right-content{
-  width:40vw;
+
+.right-side{
+  width:50%;
+  height: 70vh;
+  /* border:2px solid blue; */
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-.main-container .right-content h2{
-  height: 15vh;
-  padding-top:5%;
+.right-side h1{
   font-family: 'Tiempos Headline';
-  font-weight: bold;
-  font-size: 30px;
-  padding-bottom:4%;
+  font-weight: 600;
+  font-size: 60px;
+  color:white;
+  line-height: 120px;
+  z-index: 9999999;
+  background:none;
+  
 }
 
-.main-container .right-content p{
-  height: 20vh;
+.right-side p {
+  color:white;
   font-family: 'Berthold Akzidenz Grotesk', sans-serif;
-  font-size:16px;
-  line-height: 24px;
-}
-.main-container .right-content .info{
-  height: 5vh;
 }
 
-.main-container .right-content .info a {
-  font-weight: 500;
-  color: #002833;
+.right-side img{
+  width:22%;
+  animation: rotate-text linear 8s infinite;
+  cursor: pointer;
+}
+
+@keyframes rotate-text{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
+/**************
+   info bellow
+****************/
+.info{
+  /* border:solid red 2px; */
+  display: flex;
+  padding-bottom:10%;
+}
+.about-container{
+  width:40vw;
+  margin-left:10vw;
+  margin-top:15%;
+}
+
+.about-container p{
+color:white;
+font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+font-size: 16px;
+line-height: 24px;
+padding-bottom: 5%;
+}
+
+.about-container h2{
+  font-family: 'Tiempos Headline';
+  font-weight: 600;
+  font-size: 30px;
+  color:white;
+  padding-bottom: 5%;
+}
+
+.about-img{
+  width:40vw;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.about-img img{
+  margin-top:35%;
+  width:85%;
 }

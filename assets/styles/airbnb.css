@@ -1,0 +1,36 @@
+
+p{
+    font-family: 'Berthold Akzidenz Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* H2*/
+
+.project .project-title .h2-title{
+    width:30vw;
+    height: 20vh;
+    font-family: 'Tiempos Headline';
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom:1%;
+    line-height: 45px;
+}
+
+.problematic{
+    width:100vw;
+    height: 30vh;
+    background:#EDEFF5;
+    display:flex;
+    justify-content: center;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.problematic-text{
+
+}
+
+.project-background{
+    margin-top:10%;
+}

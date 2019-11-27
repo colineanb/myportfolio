@@ -2,55 +2,55 @@
 /**
  * Image Parallax
  */
-let  imgContainer = document.querySelector('.image-date-container')
-window.addEventListener('mousemove', (_event) =>
-{
-    const ratioX = _event.clientX / window.innerWidth - 0.5
-    const ratioY = _event.clientY / window.innerHeight - 0.5
+// let  imgContainer = document.querySelector('.image-date-container')
+// window.addEventListener('mousemove', (_event) =>
+// {
+//     const ratioX = _event.clientX / window.innerWidth - 0.5
+//     const ratioY = _event.clientY / window.innerHeight - 0.5
     
-    const translateX = - 0.008 * ratioX * 300
-    const translateY = - 0.008 * ratioY * 300
+//     const translateX = - 0.008 * ratioX * 300
+//     const translateY = - 0.008 * ratioY * 300
 
-    img.style.transform = `translate(${translateX}%, ${translateY}%)`
+//     img.style.transform = `translate(${translateX}%, ${translateY}%)`
     
-})
+// })
 
 
-window.addEventListener('mousemove', (_event) =>
-{
-    const ratioX = _event.clientX / window.innerWidth - 0.5
-    const ratioY = _event.clientY / window.innerHeight - 0.5
+// window.addEventListener('mousemove', (_event) =>
+// {
+//     const ratioX = _event.clientX / window.innerWidth - 0.5
+//     const ratioY = _event.clientY / window.innerHeight - 0.5
     
-    const translateX = 0.008 * ratioX * 300
-    const translateY = 0.008 * ratioY * 300
+//     const translateX = 0.008 * ratioX * 300
+//     const translateY = 0.008 * ratioY * 300
     
-    typoContainer.style.transform = `translate(${translateX}%, ${translateY}%)`
+//     typoContainer.style.transform = `translate(${translateX}%, ${translateY}%)`
     
-})
+// })
 
-window.addEventListener('mousemove', (_event) =>
-{
-    const ratioX = _event.clientX / window.innerWidth - 0.5
-    const ratioY = _event.clientY / window.innerHeight - 0.5
+// window.addEventListener('mousemove', (_event) =>
+// {
+//     const ratioX = _event.clientX / window.innerWidth - 0.5
+//     const ratioY = _event.clientY / window.innerHeight - 0.5
     
-    const translateX = - 0.008 * ratioX * 300
-    const translateY = - 0.008 * ratioY * 300
+//     const translateX = - 0.008 * ratioX * 300
+//     const translateY = - 0.008 * ratioY * 300
     
-    randomContainer.style.transform = `translate(${translateX}%, ${translateY}%)`
+//     randomContainer.style.transform = `translate(${translateX}%, ${translateY}%)`
     
-})
+// })
 
-window.addEventListener('mousemove', (_event) =>
-{
-    const ratioX = _event.clientX / window.innerWidth - 0.5
-    const ratioY = _event.clientY / window.innerHeight - 0.5
+// window.addEventListener('mousemove', (_event) =>
+// {
+//     const ratioX = _event.clientX / window.innerWidth - 0.5
+//     const ratioY = _event.clientY / window.innerHeight - 0.5
     
-    const translateX = 0.008 * ratioX * 300
-    const translateY = 0.008 * ratioY * 300
+//     const translateX = 0.008 * ratioX * 300
+//     const translateY = 0.008 * ratioY * 300
     
-    solarContainer.style.transform = `translate(${translateX}%, ${translateY}%)`
+//     solarContainer.style.transform = `translate(${translateX}%, ${translateY}%)`
     
-})
+// })
 
 
 
@@ -60,19 +60,32 @@ window.addEventListener('mousemove', (_event) =>
  * PROJECT
  */
 
- /**
-  * project 1 
-  */
 let date = document.querySelector('.date')
 let contentWrapper = document.querySelector('.content-wrapper')
 let header = document.querySelector('header')
 let blackDescriptionProjet = document.querySelector('.description-container')
-let img = document.querySelector('.hyphenClick')
+let img = document.querySelector('.hyphen-click')
 let typo = document.querySelector('.typo')
 let solar = document.querySelector('.solar')
 let random = document.querySelector('.random')
 
-// Animation on click before redirection
+
+
+ /**
+  * projet 1 WASTIC
+  */
+ let imgWastic = document.querySelector('.wastic-click')
+
+imgWastic.addEventListener('click', () =>
+{
+    console.log("heyyyyyy")
+    window.location.href = "pages/wastic.html";
+})
+
+
+ /**
+  * projet 2 HYPHEN
+  */
 img.addEventListener('click', () =>
 {
     window.location.href = "pages/hyphen.html";
@@ -97,94 +110,44 @@ img.addEventListener('click', () =>
 })
 
  /**
-  * projet 2
+  * projet 3 AIRBNB
   */
 
-  let imgtypo = document.querySelector('.typoClick')
-  let typoContainer = document.querySelector('.typoContainer')
 
- imgtypo.addEventListener('click', () =>
- {
-    window.location.href = "pages/typography.html";
-    //  //delay before redirection
-    //  setTimeout(function () {
-    //      window.location.href = "pages/typography.html";
-    //   }, 3000); 
- 
-    //  //animation image
-    //  typoContainer.classList.add('animation-image')
-    //  imgtypo.classList.add('width-image')
-    //  date.style.display = "none"
-    //  header.style.display = "none"
-    //  img.style.display = "none"  
-    //  solar.style.display = "none"  
-    //  random.style.display = "none"  
-    //  contentWrapper.classList.add('content-wrapper-animation')
-    //  setTimeout(function(){
-    //  blackDescriptionProjet.style.visibility = "visible"
-    // }, 1000)
-    
- })
+ let imgAirbnb = document.querySelector('.airbnb-click')
 
- /**
-  * projet 3
-  */
-
- let imgrandom = document.querySelector('.randomClick')
- let randomContainer = document.querySelector('.randomContainer')
-
-imgrandom.addEventListener('click', () =>
+ imgAirbnb.addEventListener('click', () =>
 {
-    window.location.href = "pages/random.html";
-    // //delay before redirection
-    // setTimeout(function () {
-    //     window.location.href = "pages/random.html";
-    //  }, 3000); 
-
-//     //animation image
-//     randomContainer.classList.add('animation-image')
-//     imgrandom.classList.add('width-image')
-//     date.style.display = "none"
-//     header.style.display = "none"
-//     img.style.display = "none"  
-//     solar.style.display = "none"  
-//     typo.style.display = "none"  
-//     contentWrapper.classList.add('content-wrapper-animation')
-//     setTimeout(function(){
-//     blackDescriptionProjet.style.visibility = "visible"
-//    }, 1000)
+    window.location.href = "pages/airbnb.html";
    
 })
 
+
  /**
-  * projet 4
+  * projet 4 BAPTISTE FOLIO
   */
 
- let imgSolar = document.querySelector('.solarClick')
- let solarContainer = document.querySelector('.solarContainer')
- let containerDate =document.querySelector('.container-date')
 
-imgSolar.addEventListener('click', () =>
+ let imgFolio = document.querySelector('.portfolio-click')
+
+ imgFolio.addEventListener('click', () =>
 {
-    window.location.href = "pages/space.html";
-    // //delay before redirection
-    // setTimeout(function () {
-    //     window.location.href = "pages/space.html";
-    //  }, 3000); 
+    window.location.href = "pages/folio.html";
+   
+})
 
-//     //animation image
-//     solarContainer.classList.add('animation-image')
-//     imgSolar.classList.add('width-image')
-//     date.style.display = "none"
-//     containerDate.style.display = "none"
-//     header.style.display = "none"
-//     img.style.display = "none"  
-//     random.style.display = "none"  
-//     typo.style.display = "none"  
-//     contentWrapper.classList.add('content-wrapper-animation')
-//     setTimeout(function(){
-//     blackDescriptionProjet.style.visibility = "visible"
-//    }, 1000)
+
+
+ /**
+  * projet 5 LAB
+  */
+
+
+ let imgLab = document.querySelector('.lab-click')
+
+ imgLab.addEventListener('click', () =>
+{
+    window.location.href = "pages/lab.html";
    
 })
 

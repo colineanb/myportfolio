@@ -1,5 +1,5 @@
-*{
-    background:#F6F3ED;
+body{
+    background:#FBF7F2;
 }
 .body::-webkit-scrollbar { 
     width: 0 !important 
@@ -58,7 +58,7 @@ header nav ul {
     position: absolute;
     width:10vw;
     height: 10vh;
-    border-bottom:1px solid black;
+    /* border-bottom:1px solid black; */
 }
 
 .links-container{
@@ -86,10 +86,6 @@ header nav ul {
     MAIN
 **********/
 
-.content-wrapper{
-
-
-}
 .container {
     position: fixed;
     left: 0;
@@ -111,31 +107,34 @@ header nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 15em;
+    /* align-items: center; */
+    margin-top: 20vw;
+    margin-left:3vw;
     width: 60vw;
     height: 80vh;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    /* border: 1px solid #333; */
-    text-align: center;
   }
 
   .project-container{
     /* border:3px solid blue; */
     width:100%;
-    height:100%;
+    height:79%;
     display:flex;
   }
   
   .project-container .project-content h1{
-    padding-bottom: 2%;
+    position: absolute;
+    top:40%;
+    margin-left:40%;
+    z-index:9999;
     font-family: 'Tiempos Headline';
     font-weight:bold;
     font-size: 46px;
     transition:color 0.7s ease-out;
     /* border:3px solid olive; */
     text-align: start;
+    color:#363636;
 }
 
 
@@ -147,6 +146,7 @@ header nav ul {
 
 .project-description{
     width:8%;
+    height:100%;
     /* border:2px solid red;     */
     display:flex;
     align-items: flex-end;
@@ -168,7 +168,8 @@ header nav ul {
 
 .project-content{
     width:92%;
-    /* border:3px solid violet; */
+    height: 87%;
+    /* border:2px solid violet; */
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,46 +193,49 @@ header nav ul {
     justify-content: flex-start;
 }
 
-.hyphenClick{
-    width:46vw;
-    height: 68vh;
+.wastic-click{
+    width:50vw;
+    height: 62vh;
     z-index: 999; 
     cursor: pointer;
 }
 
-.typoClick{
-    width:46vw;
-    height: 68vh;
+
+.hyphen-click{
+    width:50vw;
+    height: 62vh;
     z-index: 999; 
     cursor: pointer;
 }
 
-.solarClick{
-    width:46vw;
-    height: 68vh;
+.airbnb-click{
+    width:50vw;
+    height: 62vh;
     z-index: 999; 
     cursor: pointer;
 }
 
-.randomClick{
-    width:46vw;
-    height: 68vh;
+.portfolio-click{
+    width:50vw;
+    height: 62vh;
+    z-index: 999; 
+    cursor: pointer;
+}
+
+.lab-click{
+    width:50vw;
+    height: 62vh;
     z-index: 999; 
     cursor: pointer;
 }
 
 
 .image-date-container .container-date{
-    height: 12%;
+    height: 14%;
     display:flex;
     align-items: flex-start;
-    transform: rotate(90deg) translateY(30%) translateX(-20%);
+    transform: rotate(90deg) translateY(40%) translateX(-25%);
     /* border: indianred solid 3px; */
-}
-
-  .image-date-container .container-date .date{
-    /* border: mediumaquamarine solid 3px; */
-    padding-bottom:15%;
 }
 
 
@@ -248,7 +252,7 @@ header nav ul {
         ANIMATION IMG
 
 ***************************/
-
+/* 
 .content-wrapper-animation{
     width:110vw;
     position: absolute;
@@ -276,7 +280,7 @@ header nav ul {
     0%{transform:translateY(0%);}
     60%{transition: transform 3s ease; transform:scale(1.4);}
     100%{transition: transform 4s ease; transform: translateY(-20px);}
-}
+} */
 
 
 
@@ -373,7 +377,7 @@ header nav ul {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #363636;
+    /* border: 1px solid #363636; */
     background:none;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.13, 1.04, 0.74, 1.07);
@@ -388,7 +392,7 @@ header nav ul {
 /*************** 
     responsive
 ****************/
-@media screen and (min-width: 200px) and (max-width: 1024px) {
+/* @media screen and (min-width: 200px) and (max-width: 1024px) {
     .animation-image{
         display:none;
     }
@@ -400,4 +404,4 @@ header nav ul {
     .content-wrapper-animation{
         display:none;
     }
-  }
+  } */
